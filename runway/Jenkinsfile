@@ -16,17 +16,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sh build.sh'
+                sh 'sh runway/build.sh'
             }
         }
         stage('Test') {
             steps {
-                sh 'sh test.sh'
+                sh 'sh runway/test.sh'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'sh build.sh'
+                sh 'sh runway/deploy.sh'
             }
         }
     }
