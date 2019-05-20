@@ -14,9 +14,19 @@ node{
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo "Hello World!"
+                sh build.sh
+            }
+        }
+        stage('Test') {
+            steps {
+                sh test.sh
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh deploy.sh
             }
         }
     }
