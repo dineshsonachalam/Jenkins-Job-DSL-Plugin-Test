@@ -1,3 +1,4 @@
+/*
 node{
     stage("Build") {
             sh build.sh
@@ -7,5 +8,16 @@ node{
     }
     stage("Deploy"){
             sh deploy.sh
+    }
+}
+*/
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "Hello World!"
+            }
+        }
     }
 }

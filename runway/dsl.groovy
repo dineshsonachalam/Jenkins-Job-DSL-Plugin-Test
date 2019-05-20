@@ -1,7 +1,4 @@
 def myjob = pipelineJob('Github_DSL_Plugin_2') {
-    parameters {
-        stringParam('INPUT', '', 'csv')
-    }
     definition {
         cpsScm {
             scm {
