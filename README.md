@@ -1,3 +1,3 @@
 # Jenkins-Job-DSL-Plugin-Test
 
-/ Test1
+// Test1
