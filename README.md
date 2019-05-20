@@ -1,3 +1,3 @@
-# Jenkins-Job-DSL-Plugin-Test
+# Jenkins-Job-DSL-Plugin
 
 
