@@ -16,7 +16,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh build.sh
+                sh 'sh build.sh'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'sh test.sh'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'sh build.sh'
             }
         }
     }
