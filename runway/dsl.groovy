@@ -13,3 +13,5 @@ def myjob = pipelineJob('Github_DSL_Plugin_2') {
         }
     }
 }
+
+queue(myjob)
