@@ -1,6 +1,4 @@
 node{
-    def reasonstr = ''
-
     stage("Build") {
             sh build.sh
     }

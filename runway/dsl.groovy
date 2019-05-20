@@ -1,4 +1,4 @@
-def myjob = pipelineJob('Job DSL Plugin Test') {
+def myjob = pipelineJob('Github_DSL_Plugin') {
     parameters {
         stringParam('INPUT', '', 'csv')
     }
